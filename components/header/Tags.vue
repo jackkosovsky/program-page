@@ -1,23 +1,25 @@
 <template>
   <article class="tags d-flex justify-content-start flex-wrap">
 
-    <transition-group name="fade" tag="ul" class="tags__anim flex-wrap">
-      <li class="tags__tag" v-for="(tag, index) in tags" :key="tag"> {{ tag }}</li>
+    <transition-group name="fade" tag="div" class="tags__anim">
+      <div class="tags__tag" v-for="(tag, index) in tags" :key="tag"> {{ tag }}</div>
+
+
+      <div class="tags__more-btn" :key="-1"
+           v-show="isVisible"
+           @click="addTags"
+      >
+        + 30 показать
+      </div>
+
+      <div class="tags__more-btn" :key="-2"
+           v-show="!isVisible"
+           @click="delTags"
+      >
+        Скрыть
+      </div>
+
     </transition-group>
-
-    <div class="tags__more-btn"
-         v-show="isVisible"
-         @click="addTags"
-    >
-      + 30 показать
-    </div>
-
-    <div class="tags__more-btn"
-         v-show="!isVisible"
-         @click="delTags"
-    >
-      Скрыть
-    </div>
   </article>
 </template>
 
@@ -40,6 +42,7 @@
           'генетика',
         ],
         newFakeApiArray: [
+
           'медсестринство',
           'офтальмология',
           'стоматология',
@@ -61,7 +64,6 @@
           'санитария',
           'ветеринария',
           'валеология',
-          'онкология',
           'фармакология',
           'аллергология',
           'проктология',
@@ -102,7 +104,8 @@
   .tags {
     display: flex;
     justify-content: flex-end;
-    margin-top: 45px;
+    margin-top: 37px;
+
     &__anim {
       padding: 0;
     }
@@ -110,7 +113,7 @@
     &__tag {
       display: inline-block;
       padding: 5px 11px;
-      margin: 0 8px 8px 0;
+      margin: 8px 8px 0px 0;
       text-transform: capitalize;
       background: white;
       border: 1px solid #f0f0f0;
@@ -125,15 +128,15 @@
     }
 
     &__more-btn {
-      display: block;
+      display: inline-block;
+      margin-left: 18px;
       font-weight: 600;
       font-size: 14px;
       line-height: 17px;
-      height: 17px;
+      height: 18px;
       text-decoration: none;
       border-bottom: 1px dashed #000080;
       position: relative;
-      top: 8px;
       z-index: 99999999;
       cursor: pointer;
     }

@@ -26,23 +26,24 @@
     }
 
     &__rec {
-      font-size: 16px;
-      line-height: 1.45em;
-      padding-top: 12px;
+      margin-top: 19px;
+      font-size: 14px;
+      line-height: 145.84%;
       @media (min-width: 576px) {
+        margin-top: 40px;
         font-size: 23px;
-        padding-top: 20px;
+        line-height: 1.44em;
       }
       @media (min-width: 1024px) {
+        margin-top: 37px;
         font-size: 23px;
-        padding-top: 20px;
+        line-height: 1.44em;
       }
     }
 
     &__client {
 
-        margin-top: 10px;
-
+      margin-top: 10px;
       display: flex;
       align-items: center;
       justify-content: center;

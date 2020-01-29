@@ -49,7 +49,8 @@
 
   @media (min-width: 1024px) {
     .helper {
-      top: 200px;
+      top: 136px;
+      height: 200px;
     }
   }
 </style>

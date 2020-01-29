@@ -47,6 +47,7 @@
       font-weight: bold;
       text-decoration: underline;
       margin-right: 10px;
+      cursor: pointer;
     }
   }
 
