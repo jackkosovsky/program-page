@@ -1,0 +1,53 @@
+// Bootstrap, BootstrapVue and custom SCSS files
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+@import 'variables';
+@import 'scroll-custom';
+
+// General style overrides and custom classes
+
+body {
+  color: $text-color;
+  font-family: $text-main;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.secondary-text {
+  color: $text-secondary;
+}
+
+// Containers
+
+@media (min-width: 600px) {
+  .container-fluid {
+    width: 90% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    width: 80% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-fluid {
+    width: 81% !important;
+  }
+}
+
+// Mixins and styles for titles
+
+@mixin main-block-title-1 {
+  font-weight: 600;
+  font-size: 34px;
+}
+
+@mixin main-block-title-2 {
+  font-weight: 600;
+  font-size: 40px;
+}
