@@ -1,7 +1,7 @@
 <template>
   <article class="tags d-flex justify-content-start flex-wrap">
 
-    <transition-group name="fade" tag="ul" class="tags__anim">
+    <transition-group name="fade" tag="ul" class="tags__anim flex-wrap">
       <li class="tags__tag" v-for="(tag, index) in tags" :key="tag"> {{ tag }}</li>
     </transition-group>
 
@@ -32,7 +32,7 @@
         delNum: 0,
         tags: [
           'нефрология',
-          'еерапия',
+          'терапия',
           'пластика',
           'педиатрия',
           'акушерство',

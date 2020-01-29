@@ -1,20 +1,19 @@
 <template>
-  <section class="banner-area justify-content-center">
+  <section class="banner-area" v-if="isClose">
+    <div class="container-fluid">
 
-    <transition name="slide-fade">
-      <div class="banner d-flex justify-content-center"
-           v-if="isClose"
-      >
-        50% скидка на все программы при оплате онлайн до 15 декабря.
-        <span class="banner_mod">Оплати сейчас!</span>
-        <div class="banner__btn"
-             @click="closeBanner"
-        >
-          <img src="~/static/close.svg" alt="close">
+      <div class="close-btn d-flex justify-content-center" @click="closeBanner">
+        <img src="~/static/close.svg" alt="close">
+      </div>
+
+      <div class="banner d-flex justify-content-center">
+        <div class="flex-wrap text-center">
+          50% скидка на все программы при оплате онлайн до 15 декабря.
+          <div class="banner-mod">Оплати сейчас!</div>
         </div>
       </div>
-    </transition>
 
+    </div>
   </section>
 </template>
 
@@ -35,41 +34,34 @@
 </script>
 
 <style lang="scss" scoped>
-  .banner {
+  .banner-area {
     background-color: #FE8726;
     color: white;
-    height: 52px;
-    padding: 3px;
+  }
 
-    .banner_mod {
+  .banner {
+    padding: 20px 40px;
+
+    &-mod {
+      display: inline-block;
       font-weight: bold;
       text-decoration: underline;
       margin-right: 10px;
     }
+  }
 
-    &__btn {
-      cursor: pointer;
-
-      :hover {
-        transform: scale(1.4);
-      }
+  .close-btn {
+    cursor: pointer;
+    float: right;
+    @media (min-width: 1024px) {
     }
-  }
+    right: 0px;
+    top: 24px;
+    position: relative;
 
-  .remove {
-    display: none !important;
-  }
-
-  .slide-fade-enter-active {
-    transition: all .3s ease-in-out;
-  }
-  .slide-fade-leave-active {
-    transition: all .3s ease-in-out;
-  }
-  .slide-fade-enter, .slide-fade-leave-to {
-    transform: scale(1.4);
-    transform: translate( 0, -10px);
-    opacity: 0;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
 </style>

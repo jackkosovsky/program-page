@@ -5,7 +5,7 @@
 
     <b-navbar class="px-0" toggleable="xl">
 
-      <div class="d-flex flex-row navigation__hamburger">
+      <div class="d-flex flex-row d-xl-none navigation__hamburger">
         <b-navbar-toggle target="nav-collapse"><img src="~/static/gamburger.svg" alt=""></b-navbar-toggle>
         <b-navbar-brand class="logo" to="/">
           <div class="double-logo d-flex flex-column d-block d-xl-none">
@@ -101,7 +101,9 @@
       button {
         border: none;
         outline: none;
-        color: $text-color
+        color: $text-color;
+        padding-left: 0;
+        padding-right: 23px;
       }
 
       &-title {

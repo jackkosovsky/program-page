@@ -1,9 +1,9 @@
 // Bootstrap, BootstrapVue and custom SCSS files
 
+@import 'custom';
+@import 'scroll-custom';
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-vue/src/index.scss';
-@import 'variables';
-@import 'scroll-custom';
 
 // General style overrides and custom classes
 
