@@ -1,6 +1,6 @@
 # main-page
 
-> Main page vrachu.ru
+> Program page vrachu.ru (Obalor)
 
 ## Build Setup
 
