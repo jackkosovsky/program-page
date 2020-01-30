@@ -278,7 +278,7 @@
         height: 100%;
         right: -1px;
         top: 0;
-        background: linear-gradient(to left, white 0%, transparent 100%);
+        background: url(/_nuxt/static/grCarousel.png) 16px repeat-y;
       }
     }
   }

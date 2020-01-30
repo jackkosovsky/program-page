@@ -12,6 +12,8 @@
 </template>
 
 <script>
+  import Modal from '~/components/Modal'
+
   export default {
     name: "Modules",
     data: () => ({
@@ -23,9 +25,23 @@
         'Непосредственные осложнения процедур гемодиализа',
         'Осложнения перитонеального диализа и связанных манипуляций',
         'Трансплантация почки'
-      ]
-    })
+      ],
+      isModalVisible: false
+    }),
+
+    methods: {
+      showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      }
+    },
+    components: {
+      Modal
+    }
   }
+
 </script>
 
 <style lang="scss" scoped>

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Modal v-show="isModalVisible" @close="closeModal"/>
 
+    <Modal v-show="isModalVisible" @close="closeModal"/>
     <div class="container-fluid navigation">
 
       <nav class="navbar navbar-expand-xxl px-0">
