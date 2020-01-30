@@ -38,6 +38,12 @@
       margin-top: 50px;
       padding-bottom: 50px;
     }
+
+    @media (min-width: 576px) {
+      margin-top: 60px;
+      padding-bottom: 50px;
+    }
+
     @media (min-width: 1024px) {
       margin-top: 50px;
     }

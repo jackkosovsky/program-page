@@ -66,13 +66,10 @@
 
         <div class="review__allInfo">
           <div class="review__allInfo-author d-flex">
-            <div class="review__allInfo-author-logo">
-              <img src="~/static/red-сross.png" alt="сross">
-            </div>
-            <div class="review__allInfo-author-text d-flex align-items-center">Городская Покровская больница</div>
+            <div class="review__allInfo-author-text d-flex align-items-center">Иванов Иван Иванович</div>
           </div>
           <div class="review__allInfo-second d-flex">
-            <div class="review__allInfo-second-description secondary-text carousel-marg">Вебинар “ Современные аспекты заместительной почечной терапии</div>
+            <div class="review__allInfo-second-description secondary-text carousel-marg compensation">Вебинар “ Современные аспекты заместительной почечной терапии</div>
           </div>
         </div>
 
@@ -155,7 +152,7 @@
 
       &-author {
         margin-top: 19px;
-        height: 40px;
+        min-height: 40px;
         align-items: center;
 
         &-logo {
@@ -209,7 +206,33 @@
   }
 
   .carousel-marg {
+    margin-top: 20px;
     margin-left: 60px;
+    @media (min-width: 576px) {
+      margin-top: 3px;
+      margin-left: 60px;
+    }
+    @media (min-width: 1024px) {
+      margin-top: 0;
+      margin-left: 60px;
+    }
+  }
+
+  .compensation {
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    @media (min-width: 576px) {
+      margin-bottom: 0px;
+      padding-bottom: 5px;
+    }
+    @media (min-width: 1024px) {
+      margin-bottom: 0px;
+      padding-bottom: 5px;
+    }
+  }
+
+  .inverse {
+
   }
 
 </style>
