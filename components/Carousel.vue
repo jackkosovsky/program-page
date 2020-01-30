@@ -1,6 +1,6 @@
 <template>
 
-  <div class="container-fluid big-carousel">
+  <div class="container-fluid carousel">
     <h2 class="title d-none d-sm-block">Отзывы о программе:</h2>
     <h2 class="title d-sm-none">Отзывы о нас:</h2>
     <carousel class="review"
@@ -123,7 +123,16 @@
 
 <style lang="scss">
 
-  .big-carousel {
+  .carousel {
+    padding-top: 70px;
+
+    @media (min-width: 576px) {
+      padding-top: 70px;
+    }
+    @media (min-width: 1024px) {
+      padding-top: 70px;
+    }
+
     .title {
       font-weight: 600;
       font-size: 22px;
@@ -145,8 +154,8 @@
   }
 
   .review {
-    margin-bottom: 80px;
-    box-shadow: 0px 7px 70px rgba(0, 50, 123, 0.2);
+    box-shadow: 0 7px 70px rgba(0, 50, 123, 0.2);
+
 
     &__card {
       padding: 30px;
@@ -176,7 +185,7 @@
     .owl-nav {
       position: absolute !important;
       margin: 0 !important;
-      right: 0px;
+      right: 0;
       top: -85px;
 
       .owl-prev {

@@ -1,19 +1,19 @@
 <template>
   <div>
-    <Navigation/>
+    <Menu/>
     <Nuxt/>
   </div>
 </template>
 
 <script>
 
-  import Navigation from '~/components/Navigation.vue';
+  import Menu from '~/components/Menu.vue';
   import Footer from '~/components/Footer.vue';
 
   export default {
     name: "empty",
     components: {
-      Navigation,
+      Menu,
       Footer
     }
   }

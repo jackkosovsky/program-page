@@ -55,7 +55,7 @@
           'микрохирургия',
           'нутрициология',
           'ортодонтия ',
-          'иммунология',
+          'трихология',
           'вирусология',
           'психология',
           'гомеопатия',
@@ -79,7 +79,9 @@
     methods: {
 
       addTags() {
-        this.isVisible = !this.isVisible
+
+        setTimeout(function () { this.fetchChangeBtn() }.bind(this), 300)
+
         this.newFakeApiArray.forEach((element, index) => {
           setTimeout(() => {
             this.tags.push(element);
@@ -89,13 +91,24 @@
       },
 
       delTags() {
-        this.isVisible = !this.isVisible
-        while (this.delNum > 0) {
-          const subtraction = () => this.tags.pop();
-          setTimeout(subtraction, 400);
+
+        setTimeout(function () { this.fetchChangeBtn() }.bind(this), 800)
+
+        let backDelay = 0;
+        for (let i = this.delNum; i > 0; i--) {
+          let jack = this.tags;
+          (function (i) {
+            const subtraction = () => jack.pop();
+            setTimeout(subtraction, backDelay);
+            backDelay += 30
+          })(i);
           this.delNum--
         }
-      }
+      },
+
+      fetchChangeBtn: function () {
+        this.isVisible = !this.isVisible
+      },
     },
   }
 </script>
@@ -113,10 +126,12 @@
     &__tag {
       display: inline-block;
       padding: 5px 11px;
-      margin: 8px 8px 0px 0;
+      margin: 8px 8px 0 0;
+      font-size: 14px;
+      line-height: 17px;
       text-transform: capitalize;
+      border: 1px solid rgba(240, 240, 240, 0.8);
       background: white;
-      border: 1px solid #f0f0f0;
       cursor: pointer;
       transition: background .3s ease, box-shadow .3s ease, color .2s ease;
 
@@ -129,29 +144,30 @@
 
     &__more-btn {
       display: inline-block;
+      margin-top: 8px;
       margin-left: 18px;
       font-weight: 600;
       font-size: 14px;
-      line-height: 17px;
-      height: 18px;
+      line-height: 35px;
+      height: 27px;
+      color: $text-color;
       text-decoration: none;
-      border-bottom: 1px dashed #000080;
+      border-bottom: 1px dashed $text-color;
       position: relative;
-      z-index: 99999999;
+      z-index: 999;
       cursor: pointer;
     }
 
     .fade-enter,
     .fade-leave-active {
       opacity: 0;
-      transform: scale(1.4, 1.1);
+      transform: scale(1.3, 1.3);
     }
 
     .fade-enter-active,
     .fade-leave-active {
-      transition: .5s ease-in-out;
+      transition: .4s ease-out;
     }
-
 
   }
 </style>

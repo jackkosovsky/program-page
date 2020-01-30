@@ -42,15 +42,13 @@
   .header-bg {
     background: url("../../static/header-pic.png") no-repeat;
     background-size: cover;
-    transition: background 1s !important;
-    transition: background-size 1s !important;
-    padding-bottom: 78px;
+    padding-bottom: 78px
   }
 
   @media (min-width: 1024px) {
     .helper {
-      top: 136px;
-      height: 200px;
+      top: 60px;
+      height: 200px
     }
   }
 </style>

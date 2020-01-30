@@ -20,12 +20,13 @@
 
 <style lang="scss" scoped>
   .about {
-
-    padding-bootom: 50px;
+    margin-top: 44px;
 
     @media (min-width: 576px) {
+      margin-top: 47px;
     }
     @media (min-width: 1024px) {
+      margin-top: 47px;
     }
 
     &__title {
@@ -46,6 +47,7 @@
         margin-bottom: 21px;
       }
     }
+
     &__content {
       font-size: 14px;
       line-height: 1.5em;
@@ -56,6 +58,7 @@
         font-size: 18px;
       }
     }
+
     .margin-content {
       margin-bottom: 1.5em;
     }

@@ -15,7 +15,7 @@
         </b-navbar-brand>
       </div>
 
-      <b-navbar-brand class="logo" to="/">
+      <b-navbar-brand class="logo d-md-none d-xl-block" to="/">
         <h4 class="navigation__title d-none d-xl-flex">Федеральный Центр НМО</h4>
         <span class="navigation__description secondary-text">Дистанционное обучение врачей, медсестер и фармацевтов</span>
       </b-navbar-brand>
@@ -34,14 +34,13 @@
 
       <b-collapse id="nav-collapse" is-nav class="navigation__main-menu order-3 order-xl-1">
         <b-navbar-nav>
-          <b-nav-item exact no-prefetch active-class="active" class="navigation__link nav-link" to="/webinar">
+          <b-nav-item exact no-prefetch active-class="active" class="navigation__link" to="/webinar">
             Вебинары
-            <span class="sr-only">(current)</span>
           </b-nav-item>
-          <b-nav-item active-class="active" class="navigation__link  nav-link" to="/programs">
+          <b-nav-item active-class="active" class="navigation__link" to="/programs">
             Программы НМО
           </b-nav-item>
-          <b-nav-item active-class="active" class="navigation__link  nav-link" to="/help">
+          <b-nav-item active-class="active" class="navigation__link" to="/help">
             Помощь
           </b-nav-item>
         </b-navbar-nav>
@@ -78,11 +77,17 @@
 <style lang="scss" scoped>
 
   .navigation {
+    .logo {
+      padding-right: 0 !important;
+      cursor:pointer;
+    }
+
     &__title {
       @media (min-width: 576px) {
         font-weight: bold;
         font-size: 18px;
         line-height: 21px;
+        margin-bottom: 0 !important;
       }
       @media (min-width: 1024px) {
       }
@@ -96,6 +101,7 @@
         display: block;
       }
     }
+
 
     &__hamburger {
       button {
@@ -118,26 +124,15 @@
     }
 
     &__main-menu {
-      @media (max-width: 1726px) and (min-width: 1024px){
+      @media (max-width: 1580px) and (min-width: 1024px) {
         text-indent: -999em;
-        display: none !important;
       }
     }
 
     &__link {
-      font-weight: 500;
-      font-size: 18px;
-      color: $text-color;
-      padding: 0;
-      margin: 0;
-
-
-      :hover {
-        color: $active-color !important;
-      }
-
-      .active {
-        color: $active-color !important;
+    color: orangered;
+      &:hover {
+        color: $active-color;
       }
     }
 
@@ -146,8 +141,12 @@
       font-size: 19px;
       line-height: 24px;
       @media (min-width: 1024px) {
-        transform: translate(-100px, 0);
+        transform: translate(-66px, 0);
       }
+      @media (max-width: 1100px) and (min-width: 1024px) {
+        font-size: 17px;
+      }
+
       &-callMe {
         font-size: 18px;
         font-weight: normal;
@@ -162,6 +161,7 @@
     &__btn {
       justify-content: center;
       align-items: center;
+      margin: 5px 0;
       color: white;
       height: 66px;
       width: 244px;
@@ -175,7 +175,7 @@
 
       &:hover {
         background: lighten($active-color, 10%);
-        box-shadow: 0px 7px 70px rgba(0, 50, 123, 0.3);
+        box-shadow: 0 7px 70px rgba(0, 50, 123, 0.3);
       }
     }
 

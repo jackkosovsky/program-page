@@ -2,7 +2,7 @@
   <div>
     <!--<div class="podlogka"><img src="~/static/podlogka2.png" alt=""></div>-->
     <Banner/>
-    <Navigation/>
+    <Menu/>
     <Nuxt/>
     <Footer/>
   </div>
@@ -10,13 +10,13 @@
 
 <script>
   import Banner from '~/components/Banner.vue';
-  import Navigation from '~/components/Navigation.vue';
+  import Menu from '~/components/Menu.vue';
   import Footer from '~/components/Footer.vue';
 
   export default {
     components: {
       Banner,
-      Navigation,
+      Menu,
       Footer
     }
   }

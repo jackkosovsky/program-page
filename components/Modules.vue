@@ -31,18 +31,22 @@
 <style lang="scss" scoped>
   .modules {
 
-    padding: 50px 0;
+    margin-top: 35px;
+    padding-bottom: 31px;
 
     @media (min-width: 576px) {
+      margin-top: 50px;
+      padding-bottom: 50px;
     }
     @media (min-width: 1024px) {
+      margin-top: 50px;
     }
 
     &__title {
       font-weight: 600;
       font-size: 22px;
       line-height: 26px;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
       @media (min-width: 576px) {
         font-weight: 600;
         font-size: 33px;
