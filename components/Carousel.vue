@@ -21,14 +21,19 @@
           её осложнениях, а также о сочетании ХБП и другой соматической патологии.
           Перевели англоязычные рекомендации ведущих объединений нефрологов разных стран - Америки, Европы.
         </div>
-        <div class="review__author d-flex ">
-          <div class="review__author-logo">
-            <img src="~/static/red-сross.png" alt="сross">
+
+        <div class="review__allInfo">
+          <div class="review__allInfo-author d-flex">
+            <div class="review__allInfo-author-logo">
+              <img src="~/static/red-сross.png" alt="сross">
+            </div>
+            <div class="review__allInfo-author-text d-flex align-items-center">Городская Покровская больница</div>
           </div>
-          <div class="review__author-text d-flex align-items-center">
-            Городская Покровская больница
+          <div class="review__allInfo-second d-flex">
+            <div class="review__allInfo-second-description secondary-text carousel-marg">Вебинар “ Современные аспекты заместительной почечной терапии</div>
           </div>
         </div>
+
       </div>
 
       <div class="review__card">
@@ -37,14 +42,19 @@
           её осложнениях, а также о сочетании ХБП и другой соматической патологии.
           Перевели англоязычные рекомендации ведущих объединений нефрологов разных стран - Америки, Европы.
         </div>
-        <div class="review__author d-flex ">
-          <div class="review__author-logo">
-            <img src="~/static/red-сross.png" alt="сross">
+
+        <div class="review__allInfo">
+          <div class="review__allInfo-author d-flex">
+            <div class="review__allInfo-author-logo">
+              <img src="~/static/red-сross.png" alt="сross">
+            </div>
+            <div class="review__allInfo-author-text d-flex align-items-center">Городская Покровская больница</div>
           </div>
-          <div class="review__author-text d-flex align-items-center">
-            Городская Покровская больница
+          <div class="review__allInfo-second d-flex">
+            <div class="review__allInfo-second-description secondary-text carousel-marg">Вебинар “ Современные аспекты заместительной почечной терапии</div>
           </div>
         </div>
+
       </div>
 
       <div class="review__card">
@@ -53,46 +63,19 @@
           её осложнениях, а также о сочетании ХБП и другой соматической патологии.
           Перевели англоязычные рекомендации ведущих объединений нефрологов разных стран - Америки, Европы.
         </div>
-        <div class="review__author d-flex ">
-          <div class="review__author-logo">
-            <img src="~/static/red-сross.png" alt="сross">
-          </div>
-          <div class="review__author-text d-flex align-items-center">
-            Городская Покровская больница
-          </div>
-        </div>
-      </div>
 
-      <div class="review__card">
-        <div class="review__body">
-          В нашей программе мы собрали самую актуальную на сегодняшний день информацию о заместительной почечной терапии,
-          её осложнениях, а также о сочетании ХБП и другой соматической патологии.
-          Перевели англоязычные рекомендации ведущих объединений нефрологов разных стран - Америки, Европы.
-        </div>
-        <div class="review__author d-flex ">
-          <div class="review__author-logo">
-            <img src="~/static/red-сross.png" alt="сross">
+        <div class="review__allInfo">
+          <div class="review__allInfo-author d-flex">
+            <div class="review__allInfo-author-logo">
+              <img src="~/static/red-сross.png" alt="сross">
+            </div>
+            <div class="review__allInfo-author-text d-flex align-items-center">Городская Покровская больница</div>
           </div>
-          <div class="review__author-text d-flex align-items-center">
-            Городская Покровская больница
+          <div class="review__allInfo-second d-flex">
+            <div class="review__allInfo-second-description secondary-text carousel-marg">Вебинар “ Современные аспекты заместительной почечной терапии</div>
           </div>
         </div>
-      </div>
 
-      <div class="review__card">
-        <div class="review__body">
-          В нашей программе мы собрали самую актуальную на сегодняшний день информацию о заместительной почечной терапии,
-          её осложнениях, а также о сочетании ХБП и другой соматической патологии.
-          Перевели англоязычные рекомендации ведущих объединений нефрологов разных стран - Америки, Европы.
-        </div>
-        <div class="review__author d-flex ">
-          <div class="review__author-logo">
-            <img src="~/static/red-сross.png" alt="сross">
-          </div>
-          <div class="review__author-text d-flex align-items-center">
-            Городская Покровская больница
-          </div>
-        </div>
       </div>
 
     </carousel>
@@ -168,17 +151,34 @@
       border-bottom: 1px solid #e7e7e7
     }
 
-    &__author {
-      padding-top: 15px;
+    &__allInfo {
 
-      &-logo {
-        width: 45px;
-        height: 45px;
-        margin-right: 15px
+      &-author {
+        margin-top: 19px;
+        height: 40px;
+        align-items: center;
+
+        &-logo {
+          width: 45px;
+          height: 45px;
+          margin-right: 15px;
+        }
+
+        &-text {
+          width: 80%;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 127.8%;
+        }
       }
 
-      &-text {
-        font-weight: 600
+      &-second {
+
+        &-description {
+          font-size: 16px;
+          line-height: 1.2em;
+          margin-top: 4px;
+        }
       }
     }
 
@@ -206,8 +206,10 @@
         border: 1px solid rgba(47, 128, 243, 0.09)
       }
     }
-
   }
 
+  .carousel-marg {
+    margin-left: 60px;
+  }
 
 </style>

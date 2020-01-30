@@ -55,16 +55,17 @@
 
       flex-direction: column;
       justify-content: space-between;
+      margin-top: 40px;
       width: 100%;
-      height: 154px;
       padding: 0;
-      background: white;
+      background: transparent;
 
       @media (min-width: 576px) {
         flex-direction: row;
         justify-content: space-around;
         height: 165px;
         margin-top: 30px;
+        background: white;
         box-shadow: 0 7px 70px rgba(0, 50, 123, 0.1);
       }
       @media (min-width: 1024px) {
@@ -95,7 +96,7 @@
           align-items: center;
           justify-content: center;
           position: relative;
-          top:13px;
+          top: 13px;
         }
       }
 
@@ -116,9 +117,13 @@
       &__title {
         font-size: 16px;
         line-height: 1.2em;
+        width: 50%;
         @media (min-width: 576px) {
+          width: 100%;
           font-size: 20px;
           line-height: 1.2em;
+          position: relative;
+          top: -10px;
         }
         @media (min-width: 1024px) {
           font-size: 20px;
@@ -144,7 +149,7 @@
         font-size: 30px;
         line-height: 1.3em;
         @media (min-width: 576px) {
-          font-weight: 700;
+          font-weight: bold;
           font-size: 30px;
           line-height: 36px;
         }
@@ -176,7 +181,12 @@
           top: 30%;
         }
         @media (min-width: 700px) {
-          width: 260px;
+          padding: 20px;
+          width: 335px;
+          height: 66px;
+          @madia (min-wigth: 720px) {
+            width: 290px;
+          }
         }
         @media (min-width: 1024px) {
           width: 100%;
@@ -203,14 +213,15 @@
 
       @media (min-width: 576px) {
         flex-direction: row;
-        justify-content: center;
-        height: 165px;
-        margin-top: 30px;
+        justify-content: space-between;
+        height: 127px;
+        margin-top: 47px;
         box-shadow: 0 7px 70px rgba(0, 50, 123, 0.1);
       }
       @media (min-width: 1024px) {
-        justify-content: space-around;
+        justify-content: space-between;
         background: white;
+        height: 128px;
         margin-top: 85px;
         background: white;
         box-shadow: 0 7px 70px rgba(0, 50, 123, 0.1);
@@ -226,14 +237,17 @@
         @media (min-width: 576px) {
           flex-direction: column;
           justify-content: center;
+          text-align: left;
           align-items: flex-start;
-          width: 55%;
+          width: 70%;
         }
         @media (min-width: 1024px) {
           flex-direction: row;
           align-items: center;
-          justify-content: center;
+          justify-content: space-between;
+          width: 70%;
           position: relative;
+          padding: 20px;
         }
       }
 
@@ -242,14 +256,14 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        top: 15px;
+        top: 2px;
         @media (min-width: 576px) {
           flex-direction: row-reverse;
           align-items: flex-start;
         }
         @media (min-width: 1024px) {
           flex-direction: row;
-          width: 340px;
+          min-width: 230px;
         }
       }
 
@@ -258,13 +272,15 @@
         font-size: 18px;
         line-height: 1.3em;
         justify-content: center;
-        padding: 0 30px;
+        padding: 0 20px;
         @media (min-width: 576px) {
           font-weight: 700;
           font-size: 22px;
           line-height: 26px;
+          padding: 0;
         }
         @media (min-width: 1024px) {
+          flex-wrap: wrap;
           font-size: 25px;
           line-height: 30px;
         }
@@ -281,9 +297,13 @@
           left: 10px;
         }
         @media (min-width: 1024px) {
+          flex-wrap: nowrap;
           font-size: 22px;
           line-height: 26px;
+          position: relative;
           left: 0;
+          top: 16px;
+          margin-right: 4px;
         }
       }
 
@@ -297,6 +317,7 @@
           line-height: 36px;
         }
         @media (min-width: 1024px) {
+          flex-wrap: nowrap;
           font-weight: 700;
           font-size: 40px;
           line-height: 48px;
@@ -318,16 +339,19 @@
         }
 
         @media (min-width: 576px) {
-          height: 66px;
-          width: 200px;
+          width: 168px;
+          height: 58px;
           position: relative;
           top: 30%;
-          padding: 20px;
+          padding: 10px;
+          right: 30px;
         }
         @media (min-width: 1024px) {
-          width: 20%;
-          top: 53px;
-          padding: 20px;
+          width: 308px;
+          height: 66px;
+          top: 34px;
+          right: 20px;
+          padding: 10px;
         }
       }
 

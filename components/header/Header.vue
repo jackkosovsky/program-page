@@ -42,7 +42,13 @@
   .header-bg {
     background: url("../../static/header-pic.png") no-repeat;
     background-size: cover;
-    padding-bottom: 78px
+    padding-bottom: 35px;
+    @media (min-width: 576px) {
+      padding-bottom: 30px
+    }
+    @media (min-width: 1024px) {
+      padding-bottom: 78px
+    }
   }
 
   @media (min-width: 1024px) {

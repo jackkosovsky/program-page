@@ -42,7 +42,7 @@
     padding-bottom: 65px;
 
     @media (min-width: 576px) {
-      padding-bottom: 95px;
+      padding-bottom: 80px;
     }
     @media (min-width: 1024px) {
       padding-bottom: 95px;

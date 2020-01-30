@@ -118,6 +118,12 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 37px;
+    @media (min-width: 576px) {
+      margin-top: 20px;
+    }
+    @media (min-width: 1024px) {
+      margin-top: 37px;
+    }
 
     &__anim {
       padding: 0;
