@@ -11,10 +11,9 @@ export default {
       {hid: 'description', name: 'description', content: process.env.npm_package_description || ''}
 
 
-
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/pill.ico'},
+      {rel: 'icon', type: 'image/x-icon', href: 'svg/pill.ico'},
       {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css'},
     ],
     script: [
@@ -64,7 +63,8 @@ export default {
   ** Style resources
   */
   styleResources: {
-    scss: "~/assets/scss/main.scss"
+    scss: "~/assets/scss/main.scss",
+
   },
   /*
   ** Axios module configuration

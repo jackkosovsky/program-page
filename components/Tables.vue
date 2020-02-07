@@ -6,7 +6,7 @@
     <div class="row no-gutters full-width-table d-none d-xl-flex tables__large">
 
       <div class="col-md-4 d-flex tables__large-info">
-        <img src="../static/icon-1.svg" alt="icon" class="align-self-start tables__large-info_icon">
+        <img src="../static/svg/icon-1.svg" alt="icon" class="align-self-start tables__large-info_icon">
         <div class="d-flex flex-column">
           <div class="tables__large-info_title">Заочный формат.</div>
           <div class="tables__large-info_description">Учитесь там, где вам удобно и есть интернет!</div>
@@ -14,7 +14,7 @@
       </div>
 
       <div class="col-md-4 d-flex tables__large-info">
-        <img src="../static/icon-2.svg" alt="icon" class="align-self-start tables__large-info_icon">
+        <img src="../static/svg/icon-2.svg" alt="icon" class="align-self-start tables__large-info_icon">
         <div class="d-flex flex-column">
           <div class="tables__large-info_title">Поддержка системы НМО.</div>
           <div class="tables__large-info_description">Получайте баллы за участие в наших вебинарах, учебных программах, узнавайте новости о НМО.</div>
@@ -22,7 +22,7 @@
       </div>
 
       <div class="col-md-4 d-flex tables__large-info">
-        <img src="../static/icon-2.svg" alt="icon" class="align-self-start tables__large-info_icon">
+        <img src="../static/svg/icon-2.svg" alt="icon" class="align-self-start tables__large-info_icon">
         <div class="d-flex flex-column">
           <div class="tables__large-info_title">Только с позиции доказательной медицины</div>
           <div class="tables__large-info_description">Получайте баллы за участие в наших вебинарах, учебных программах, узнавайте новости о НМО.</div>
@@ -30,7 +30,7 @@
       </div>
 
       <div class="col-md-4 d-flex tables__large-info">
-        <img src="../static/icon-3.svg" alt="icon" class="align-self-start tables__large-info_icon">
+        <img src="../static/svg/icon-3.svg" alt="icon" class="align-self-start tables__large-info_icon">
         <div class="d-flex flex-column">
           <div class="tables__large-info_title">Максимум практики.</div>
           <div class="tables__large-info_description">Разбираем клинические случаи и непростые ситуации, вопросы приветствуются!</div>
@@ -38,7 +38,7 @@
       </div>
 
       <div class="col-md-4 d-flex tables__large-info">
-        <img src="../static/icon-4.svg" alt="icon" class="align-self-start tables__large-info_icon">
+        <img src="../static/svg/icon-4.svg" alt="icon" class="align-self-start tables__large-info_icon">
         <div class="d-flex flex-column">
           <div class="tables__large-info_title">Программа аккредитована в системе НМО.</div>
           <div class="tables__large-info_description"></div>
@@ -46,7 +46,7 @@
       </div>
 
       <div class="col-md-4 d-flex tables__large-info">
-        <img src="../static/icon-4.svg" alt="icon" class="align-self-start tables__large-info_icon">
+        <img src="../static/svg/icon-4.svg" alt="icon" class="align-self-start tables__large-info_icon">
         <div class="d-flex flex-column">
           <div class="tables__large-info_title">Программа аккредитована в системе НМО.</div>
           <div class="tables__large-info_description"></div>
@@ -60,19 +60,19 @@
     <div class="row full-medium-table d-none d-sm-flex d-xl-none tables__medium">
 
       <div class="col-sm-4 d-flex align-items-center tables__medium-info">
-        <img src="~/static/table2_1.svg" alt="icon" class="align-self-center tables__medium-info_icon">
+        <img src="~/static/svg/table2_1.svg" alt="icon" class="align-self-center tables__medium-info_icon">
         <div class="tables__medium-info_title"> Созданы ведущими экспертами и практикующими врачами</div>
       </div>
 
 
       <div class="col-sm-4 d-flex align-items-center tables__medium-info">
-        <img src="~/static/table2_2.svg" alt="icon" class="align-self-center tables__medium-info_icon">
+        <img src="~/static/svg/table2_2.svg" alt="icon" class="align-self-center tables__medium-info_icon">
         <div class="tables__medium-info_title"> Дистанционно в удобное для Вас время</div>
       </div>
 
 
       <div class="col-sm-4 d-flex align-items-center tables__medium-info">
-        <img src="~/static/table2_3.svg" alt="icon" class="align-self-center tables__medium-info_icon">
+        <img src="~/static/svg/table2_3.svg" alt="icon" class="align-self-center tables__medium-info_icon">
         <div class="tables__medium-info_title"> Только с позиции доказательной медицины</div>
       </div>
 
@@ -99,17 +99,17 @@
         >
 
           <div class="col-sm-4 d-flex align-items-center tables__small-info">
-            <img src="~/static/table2_1.svg" alt="icon" class="align-self-center tables__small-info_icon">
+            <img src="~/static/svg/table2_1.svg" alt="icon" class="align-self-center tables__small-info_icon">
             <div class="tables__small-info_title"> Созданы ведущими экспертами и практикующими врачами</div>
           </div>
 
           <div class="col-sm-4 d-flex align-items-center tables__small-info">
-            <img src="~/static/table2_2.svg" alt="icon" class="align-self-center tables__small-info_icon">
+            <img src="~/static/svg/table2_2.svg" alt="icon" class="align-self-center tables__small-info_icon">
             <div class="tables__small-info_title"> Дистанционно в удобное для Вас время</div>
           </div>
 
           <div class="col-sm-4 d-flex align-items-center tables__small-info">
-            <img src="~/static/table2_3.svg" alt="icon" class="align-self-center tables__small-info_icon">
+            <img src="~/static/svg/table2_3.svg" alt="icon" class="align-self-center tables__small-info_icon">
             <div class="tables__small-info_title"> Только с позиции доказательной медицины</div>
           </div>
 
@@ -262,7 +262,7 @@
         }
 
         .owl-next {
-          background: url("../static/next.svg") 50% no-repeat white !important;
+          background: url("../static/svg/next.svg") 50% no-repeat white !important;
           text-indent: -999em;
           width: 58px;
           height: 58px;
@@ -278,7 +278,7 @@
         height: 100%;
         right: -1px;
         top: 0;
-        background: url(/_nuxt/static/grCarousel.png) 16px repeat-y;
+        background: url("../static/img/grCarousel.png") 16px repeat-y;
       }
     }
   }

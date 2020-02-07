@@ -8,7 +8,7 @@
 
         <div class="min-logo d-flex navigation__hamburger d-xl-none">
           <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <img src="~/static/gamburger.svg" alt="">
+            <img src="~/static/svg/gamburger.svg" alt="">
           </div>
           <nuxt-link class="logo" to="/">
             <div class="double-logo d-flex flex-column d-block d-xl-none">
@@ -29,7 +29,7 @@
         </div>
 
         <div class="navigation__phone-icon d-sm-flex d-md-none ">
-          <div><a href="tel:+7 (812) 409-97-36" class="email-text"><img src="../static/phone.svg" alt=""></a></div>
+          <div><a href="tel:+7 (812) 409-97-36" class="email-text"><img src="../static/svg/phone.svg" alt=""></a></div>
         </div>
 
         <div class="navigation__btn d-none d-md-flex order-2 order-xl-3" @click="showModal">Вход или регистрация</div>

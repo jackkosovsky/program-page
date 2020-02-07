@@ -3,10 +3,10 @@
     <div class="recommend__rec">Данную программу рекомендуют:</div>
     <div class="d-flex ">
       <div class="recommend__client d-flex justify-content-center align-content-center">
-        <img src="~/static/recommend-1.jpg" alt="client">
+        <img src="~/static/img/recommend-1.jpg" alt="client">
       </div>
       <div class="recommend__client d-flex justify-content-center align-content-center">
-        <img src="~/static/recommend-2.jpg" alt="client">
+        <img src="~/static/img/recommend-2.jpg" alt="client">
       </div>
     </div>
   </article>
@@ -58,10 +58,6 @@
       @media (max-width: 576px) {
         width: 227px;
         height: 74px;
-      }
-
-      &:hover {
-        border: 1px solid lighten($active-color, 20%);
       }
 
       img {

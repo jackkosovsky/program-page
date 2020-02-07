@@ -5,14 +5,14 @@
     <h2 class="title d-sm-none">Отзывы о нас:</h2>
     <carousel class="review"
               v-if="isNuxtReady"
-
+              :nav = "true"
               :dots="false"
               :items="3"
               :margin="11"
               :autoplay="false"
               :autoplayHoverPause="true"
               :loop="true"
-              :responsive="{0:{items:1},576:{items:2},1024:{items:3}}"
+              :responsive="{0:{items:1,nav:true},576:{items:2,nav:true},1024:{items:3,nav:true}}"
     >
 
       <div class="review__card">
@@ -25,7 +25,49 @@
         <div class="review__allInfo">
           <div class="review__allInfo-author d-flex">
             <div class="review__allInfo-author-logo">
-              <img src="~/static/red-сross.png" alt="сross">
+              <img src="../static/img/red-сross.png" alt="сross">
+            </div>
+            <div class="review__allInfo-author-text d-flex align-items-center">Иванов Иван Иванович</div>
+          </div>
+          <div class="review__allInfo-second d-flex">
+            <div class="review__allInfo-second-description secondary-text carousel-marg">Вебинар “ Современные аспекты заместительной почечной терапии</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="review__card">
+        <div class="review__body">
+          В нашей программе мы собрали самую актуальную на сегодняшний день информацию о заместительной почечной терапии,
+          её осложнениях, а также о сочетании ХБП и другой соматической патологии.
+          Перевели англоязычные рекомендации ведущих объединений нефрологов разных стран - Америки, Европы.
+        </div>
+
+        <div class="review__allInfo">
+          <div class="review__allInfo-author d-flex">
+            <div class="review__allInfo-author-logo">
+              <img src="../static/img/red-сross.png" alt="сross">
+            </div>
+            <div class="review__allInfo-author-text d-flex align-items-center">Иванов Иван Иванович</div>
+          </div>
+          <div class="review__allInfo-second d-flex">
+            <div class="review__allInfo-second-description secondary-text carousel-marg">Вебинар “ Современные аспекты заместительной почечной терапии</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="review__card">
+        <div class="review__body">
+          В нашей программе мы собрали самую актуальную на сегодняшний день информацию о заместительной почечной терапии,
+          её осложнениях, а также о сочетании ХБП и другой соматической патологии.
+          Перевели англоязычные рекомендации ведущих объединений нефрологов разных стран - Америки, Европы.
+        </div>
+
+        <div class="review__allInfo">
+          <div class="review__allInfo-author d-flex">
+            <div class="review__allInfo-author-logo">
+              <img src="../static/img/red-сross.png" alt="сross">
             </div>
             <div class="review__allInfo-author-text d-flex align-items-center">Городская Покровская больница</div>
           </div>
@@ -46,9 +88,9 @@
         <div class="review__allInfo">
           <div class="review__allInfo-author d-flex">
             <div class="review__allInfo-author-logo">
-              <img src="~/static/red-сross.png" alt="сross">
+              <img src="../static/img/red-сross.png" alt="сross">
             </div>
-            <div class="review__allInfo-author-text d-flex align-items-center">Городская Покровская больница</div>
+            <div class="review__allInfo-author-text d-flex align-items-center">Иванов Иван Иванович</div>
           </div>
           <div class="review__allInfo-second d-flex">
             <div class="review__allInfo-second-description secondary-text carousel-marg">Вебинар “ Современные аспекты заместительной почечной терапии</div>
@@ -66,14 +108,35 @@
 
         <div class="review__allInfo">
           <div class="review__allInfo-author d-flex">
-            <div class="review__allInfo-author-text d-flex align-items-center">Иванов Иван Иванович</div>
+            <div class="review__allInfo-author-logo">
+              <img src="../static/img/red-сross.png" alt="сross">
+            </div>
+            <div class="review__allInfo-author-text d-flex align-items-center">Городская Покровская больница</div>
           </div>
           <div class="review__allInfo-second d-flex">
-            <div class="review__allInfo-second-description secondary-text carousel-marg compensation">Вебинар “ Современные аспекты заместительной почечной терапии</div>
+            <div class="review__allInfo-second-description secondary-text carousel-marg">Вебинар “ Современные аспекты заместительной почечной терапии</div>
           </div>
         </div>
 
       </div>
+
+<!--      <div class="review__card">-->
+<!--        <div class="review__body">-->
+<!--          В нашей программе мы собрали самую актуальную на сегодняшний день информацию о заместительной почечной терапии,-->
+<!--          её осложнениях, а также о сочетании ХБП и другой соматической патологии.-->
+<!--          Перевели англоязычные рекомендации ведущих объединений нефрологов разных стран - Америки, Европы.-->
+<!--        </div>-->
+
+<!--        <div class="review__allInfo">-->
+<!--          <div class="review__allInfo-author d-flex">-->
+<!--            <div class="review__allInfo-author-text d-flex align-items-center">Иванов Иван Иванович</div>-->
+<!--          </div>-->
+<!--          <div class="review__allInfo-second d-flex">-->
+<!--            <div class="review__allInfo-second-description secondary-text carousel-marg compensation">Вебинар “ Современные аспекты заместительной почечной терапии</div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
 
     </carousel>
   </div>
@@ -186,7 +249,7 @@
       top: -85px;
 
       .owl-prev {
-        background: url("../static/prev.svg") 50% no-repeat white !important;
+        background: url("../static/svg/prev.svg") 50% no-repeat white !important;
         text-indent: -999em;
         width: 58px;
         height: 58px;
@@ -195,7 +258,7 @@
       }
 
       .owl-next {
-        background: url("../static/next.svg") 50% no-repeat white !important;
+        background: url("../static/svg/next.svg") 50% no-repeat white !important;
         text-indent: -999em;
         width: 58px;
         height: 58px;
@@ -229,10 +292,6 @@
       margin-bottom: 0px;
       padding-bottom: 5px;
     }
-  }
-
-  .inverse {
-
   }
 
 </style>

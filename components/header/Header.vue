@@ -26,6 +26,7 @@
   import Recommend from '~/components/header/Recommend'
   import Tags from '~/components/header/Tags'
   import Subscribe from '~/components/Subscribe'
+  import Posts from '~/components/Posts.vue'
 
   export default {
     name: "Header",
@@ -33,14 +34,15 @@
       Slogan,
       Recommend,
       Tags,
-      Subscribe
+      Subscribe,
+      Posts
     }
   }
 </script>
 
 <style lang="scss" scoped>
   .header-bg {
-    background: url("../../static/header-pic.png") no-repeat;
+    background: url("../../static/img/header-pic.png") no-repeat;
     background-size: cover;
     padding-bottom: 35px;
     @media (min-width: 576px) {

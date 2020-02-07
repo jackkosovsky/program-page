@@ -167,12 +167,12 @@
     .fade-enter,
     .fade-leave-active {
       opacity: 0;
-      transform: scale(1.3, 1.3);
+      transform: scale(1.1, 1.1);
     }
 
     .fade-enter-active,
     .fade-leave-active {
-      transition: .4s ease-out;
+      transition: .9s ease;
     }
 
   }

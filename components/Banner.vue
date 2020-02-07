@@ -4,7 +4,7 @@
       <div class="container-fluid">
 
         <div class="close-btn d-flex justify-content-center" @click="closeBanner">
-          <img src="~/static/close.svg" alt="close">
+          <img src="~/static/svg/close.svg" alt="close">
         </div>
 
         <div class="banner d-flex justify-content-center">
